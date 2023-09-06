@@ -1,0 +1,70 @@
+
+/* Defina a animação slide-down */
+@keyframes slide-down {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* Estilo personalizado para o botão */
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: background-color 0.5s ease, transform 0.3s cubic-bezier(0.5, 0, 0.1, 1), border-color 0.5s ease;
+}
+
+/* Animação de rotação para o ícone do botão */
+.navbar-toggler .fas {
+    transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.navbar-toggler.collapsed {
+    background-color: transparent;
+}
+
+/* Estilo personalizado para a barra de navegação */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+/* Adicione a animação ao menu de navegação quando o botão for clicado */
+.navbar-toggler.collapsed + .navbar-collapse {
+    animation: slide-down 0.5s ease forwards;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) + .navbar-collapse {
+    animation: slide-down 0.5s ease forwards;
+    transform-origin: top;
+    transform: scaleY(1);
+    opacity: 1;
+    /* Atualize a cor de fundo da barra de navegação durante a animação */
+    transition: background-color 0.5s ease;
+}
+
+/* Estilize os itens de navegação quando abertos pelo botão */
+.navbar-collapse.show .navbar-nav .nav-item {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Remova o estilo de lista em bolinhas quando a barra estiver fechada */
+.navbar-collapse:not(.show) .navbar-nav .nav-item {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+/* Estilize a borda do botão para ser branca */
+.navbar-toggler {
+    border-color: white;
+}
+

@@ -1,0 +1,119 @@
+/* Definições globais e estilos de fundo */
+body {
+    background: url(Spotfy/img/capa.png),
+               url(Spotfy/img/ruido.png),
+               linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo da barra de navegação transparente */
+nav.navbar-transparente {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+}
+
+/* Estilos dos links de navegação */
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Estilo dos links de navegação ao passar o mouse */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+/* Estilo do ícone do botão de navegação */
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo da linha divisória entre os itens de navegação */
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+/* Estilo do conteúdo centralizado na capa */
+.capa {
+    text-align: center;
+}
+
+/* Estilo do corpo e altura do conteúdo */
+html, body, #home {
+    height: 100%;
+}
+
+/* Estilo do cabeçalho principal */
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Nenhum estilo específico definido nesta mídia */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+}
+
+/* Estilos personalizados para os botões */
+.btn-custom {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Estilo do botão roxo */
+.btn-roxo {
+    background-color: #6f42c1;
+    color: #ffffff;
+    border: none;
+}
+
+/* Estilo do botão branco */
+.btn-branco {
+    background-color: #ffffff;
+    color: #6f42c1;
+    border: 2px solid #6f42c1;
+}
+
+/* Estilo para remover sublinhado dos links */
+a {
+    text-decoration: none;
+}

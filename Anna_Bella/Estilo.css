@@ -1,0 +1,30 @@
+/* Corpo da página */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: #d2d2c1 url('img/fundo.png');
+}
+#principal{
+    width: 900px;
+}
+/* Menu */
+#menu{
+    background: #c5c5b2;
+    padding: 18px;
+}
+a{
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+#conteudo{
+    background: #e8e8d9;
+    padding: 8px;
+}
+#rodape{
+    padding: 5px;
+    text-align: center;
+}
