@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/game.js"></script>
+</head>
+<body onresize="ajustePalco()">
+    <!-- Painel -->
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="img/coracao_vazio.png">
+            <img id="v2" src="img/coracao_cheio.png">
+            <img id="v3" src="img/coracao_cheio.png">
+            
+        </div>
+        <div class="cronometro">
+            Tempo restante: <span id="cronometro"></span>
+        </div>
+    </div>
+
+
+
+    <!-- Criando elemento dinâmico (a mosca) -->
+    <script>
+    posicaoRandomica()
+
+    setInterval(function(){
+        posicaoRandomica()
+    }, 2000)
+    </script>
+    <!-- Criando cenário -->
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
